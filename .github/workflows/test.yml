@@ -31,7 +31,7 @@ jobs:
         ruby-version: ${{ matrix.ruby }}
         bundler-cache: true
     - name: Install dependencies
-      run: sudo apt-get install -y pandoc nodejs
+      run: sudo apt-get install -y pandoc nodejs pkg-config libxml2-dev libxslt-dev
     - name: Run tests
       run: ./.actions.sh
 
